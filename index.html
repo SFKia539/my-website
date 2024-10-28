@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shark web</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/home-page.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
   </head>
   <body>
     <header>
-      <h1>SharkChaser</h1>
+      <h1>Aqarumin Chaser</h1>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact-info</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#contact-info.html">Contact-info</a></li>
         </ul>
       </nav>
     </header>
@@ -39,6 +41,37 @@
         <h2>Contact</h2>
         <p>Get in touch with us through this section.</p>
       </section>
+
+      <body>
+        <div class="card-container">
+          <div class="card">Card 1</div>
+          <div class="card">Card 2</div>
+          <div class="card">Card 3</div>
+        </div>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/EF8C4v7JIbA?si=Nj5q1UaoEEczZyjH"
+          title="Exploring the ocean"
+          frameborder="0"
+          allowfullscreen
+        >
+        </iframe>
+
+        <form action="https://formspree.io/f/xrbgeayv" method="POST">
+          <label>
+            Your email:
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
+        </form>
+      </body>
     </main>
 
     <footer>

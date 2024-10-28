@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  flex: 1; /* Make each card take equal space */
+  margin: 0 10px; /* Add some margin between cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.card:first-child {
+  margin-left: 0; /* Remove margin from the first card */
+}
+
+.card:last-child {
+  margin-right: 0; /* Remove margin from the last card */
+}
+
+/* Tablet Style */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-container {
+    flex-direction: column; /* Stack cards on smaller screens */
+  }
+
+  .card {
+    margin: 10px 0; /* Vertical margin for stacked cards */
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #000000;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Desktop query */
+
+@media (min-width: 1025px) {
+  .card-container {
+    flex-direction: row;
+  }
+
+  .card {
+    margin: 0 20px;
+    max-width: 300px;
+  }
+
+  header,
+  footer {
+    padding: 1.5rem;
+  }
+
+  nav ul li {
+    margin: 20px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+}
