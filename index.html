@@ -3,15 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shark web</title>
+    <title>Aqarumin Chaser</title>
     <link rel="stylesheet" href="styles/home-page.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
   </head>
+
   <body>
     <header>
-      <h1>Aqarumin Chaser</h1>
-      <nav>
+      <h1>Welcome to Aqrumin Chaser!</h1>
+      <p>Are ready for your ultimate adventure in the deep blue sea!</p>
+
+      <input type="checkbox" id="menu-toggle" class="toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+      <nav class="nav" aria-label="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about-us.html">About us</a></li>
@@ -23,12 +32,12 @@
 
     <main>
       <section id="home">
-        <h2>Home</h2>
-        <p>This is the home section of the website.</p>
+        <h2>Clown Fish</h2>
+        <p>Clown fish from the movie finding nemo</p>
       </section>
 
       <section id="about">
-        <h2>About</h2>
+        <h2>String Rays</h2>
         <p>Learn more about us in this section.</p>
       </section>
 
@@ -38,40 +47,39 @@
       </section>
 
       <section id="contact">
-        <h2>Contact</h2>
+        <h2>Blactip-Reef</h2>
         <p>Get in touch with us through this section.</p>
       </section>
 
       <body>
-        <div class="card-container">
-          <div class="card">Card 1</div>
-          <div class="card">Card 2</div>
-          <div class="card">Card 3</div>
-        </div>
+      <div class="card-container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+      </div>
 
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/EF8C4v7JIbA?si=Nj5q1UaoEEczZyjH"
-          title="Exploring the ocean"
-          frameborder="0"
-          allowfullscreen
-        >
-        </iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/EF8C4v7JIbA?si=Nj5q1UaoEEczZyjH"
+        title="Exploring the ocean"
+        frameborder="0"
+        allowfullscreen
+      >
+      </iframe>
 
-        <form action="https://formspree.io/f/xrbgeayv" method="POST">
-          <label>
-            Your email:
-            <input type="email" name="email" />
-          </label>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
-          </label>
-          <!-- your other form fields go here -->
-          <button type="submit">Send</button>
-        </form>
-      </body>
+      <form action="https://formspree.io/f/xrbgeayv" method="POST">
+        <label>
+          Your email:
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Your message:
+          <textarea name="message" required></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </form>
     </main>
 
     <footer>

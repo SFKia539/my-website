@@ -6,24 +6,69 @@
 
 header {
   background-color: #000000;
-  color: #fff;
-  padding: 1rem;
+  color: white;
   text-align: center;
+  width: auto;
+  height: auto;
+  /* position: relative; */
+}
+
+header h1 {
+  margin: 1rem;
+}
+
+/* Basic styles for body and header */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the navigation bar */
+nav {
+  display: none; /* Hide nav by default */
+  background-color: #000000;
+  width: auto;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-nav ul li {
-  display: inline;
-  margin: 15px;
+nav li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-nav a {
+nav li a {
+  display: block;
+  padding: 15px;
   color: #fff;
   text-decoration: none;
+}
+
+/* Show the nav when the toggle is checked */
+.toggle:checked ~ nav {
+  display: block; /* Show the nav when checked */
+}
+
+/* Hamburger styles */
+.hamburger {
+  background-color: transparent;
+  cursor: pointer;
+  display: flex; /* Hidden by default */
+  flex-direction: column;
+  gap: 10px;
+  width: 100px;
+  height: 35px;
+  margin: 5px;
+}
+
+.hamburger .line {
+  width: 40px;
+  height: 10px;
+  background-color: white;
 }
 
 section {
@@ -59,15 +104,9 @@ section {
   margin-right: 0; /* Remove margin from the last card */
 }
 
-/* Tablet Style */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .card-container {
-    flex-direction: column; /* Stack cards on smaller screens */
-  }
-
-  .card {
-    margin: 10px 0; /* Vertical margin for stacked cards */
-  }
+iframe {
+  width: 100%;
+  height: auto;
 }
 
 footer {
@@ -80,7 +119,48 @@ footer {
   width: 100%;
 }
 
+/* Tablet Style */
+@media (min-width: 768px) and (max-width: 1025px) {
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6rem;
+  }
+
+  .card-container {
+    flex-direction: column; /* Stack cards on smaller screens */
+  }
+
+  .card {
+    margin: 10px 0; /* Vertical margin for stacked cards */
+  }
+
+  iframe {
+    width: 100vw;
+    height: auto;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #000000;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
 /* Desktop query */
+@media (min-width: 1025px) {
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6rem;
+  }
+}
 
 @media (min-width: 1025px) {
   .card-container {
@@ -97,17 +177,18 @@ footer {
     padding: 1.5rem;
   }
 
-  nav ul li {
-    margin: 20px;
-  }
-
   section {
-    padding: 20px;
+    margin-bottom: 20px;
   }
 
   h1,
   h2,
   h3 {
     font-size: 1.5rem;
+  }
+
+  iframe {
+    width: 560px;
+    height: 315px;
   }
 }
