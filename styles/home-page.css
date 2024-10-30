@@ -8,7 +8,7 @@ header {
   background-color: #000000;
   color: white;
   text-align: center;
-  width: auto;
+  width: 100vw;
   height: auto;
   /* position: relative; */
 }
@@ -71,7 +71,9 @@ nav li a {
   background-color: white;
 }
 
-section {
+section img {
+  height: 390px;
+  width: auto;
   margin-bottom: 20px;
 }
 
@@ -153,18 +155,41 @@ footer {
 }
 
 /* Desktop query */
-@media (min-width: 1025px) {
+@media (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    /* position: relative; */
+  }
+
+  header h1 {
+    margin: 1rem;
+  }
   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6rem;
   }
-}
 
-@media (min-width: 1025px) {
+  img {
+    height: auto;
+    width: auto;
+    margin: 20px;
+  }
   .card-container {
-    flex-direction: row;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .card {
@@ -188,7 +213,8 @@ footer {
   }
 
   iframe {
-    width: 560px;
-    height: 315px;
+    align-items: center;
+    width: 1024px;
+    height: 560px;
   }
 }

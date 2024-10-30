@@ -1,8 +1,8 @@
-# Shark Web
+# Shark Dev team
 
 ## Overview
 
-Shark Web is a simple, responsive website designed to provide users with information about various oceanic topics. The site features a hamburger menu for easy navigation, ensuring a seamless experience across different devices.
+Aqurmin Chaser is a simple, responsive website designed to provide users with information about various oceanic topics. The site features a hamburger menu for easy navigation, ensuring a seamless experience across different devices.
 
 ## Features
 
@@ -27,3 +27,7 @@ Shark Web is a simple, responsive website designed to provide users with informa
 - **Deploying** the site when ready.
 
 Feel free to modify the instructions further to match your project's specifics! Let me know if you need any more assistance.
+
+# Images
+
+For my website i only used images that Gemini created.

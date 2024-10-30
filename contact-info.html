@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Information</title>
-    <link rel="stylesheet" href="styles/home-page.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/fonts.css" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles/contact-info.css" />
   </head>
   <body>
     <header>
@@ -28,5 +26,39 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section class="contact-info">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or inquiries, please feel free to reach out
+          to us!
+        </p>
+
+        <form action="submit-form.php" method="POST" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <h3>Other Ways to Reach Us:</h3>
+        <p>
+          Email:
+          <a href="ethanmajor117@gmail.com">ethanmajor117@gmail.com</a>
+        </p>
+        <p>Phone: <a href="tel:+1234567890">+1 587 228 3390</a></p>
+        <p>Address: 123 Ocean Drive, Seaside, CA 93940</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Shark Devs. All rights reserved.</p>
+    </footer>
   </body>
 </html>

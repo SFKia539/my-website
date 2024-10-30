@@ -65,3 +65,29 @@ nav li a {
   height: 10px;
   background-color: white;
 }
+
+/* Main content styles */
+main {
+  padding: 20px;
+  background-color: #f0f8ff; /* Light background for contrast */
+  color: #333; /* Dark text for readability */
+}
+
+h2 {
+  color: #000000; /* Section heading color */
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #000000; /* Footer background color */
+  color: white;
+}
+
+/* Tablet query */
+@media (min-width: 768px) and (max-width: 1025px) {
+}
+
+/* Desktop query */
+@media (min-width: 1025px) {
+}
